@@ -1,5 +1,7 @@
 package com.cimdy.acmd;
 
+import com.cimdy.acmd.component.DataComponentRegister;
+import com.cimdy.acmd.event.ItemEvent;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
@@ -15,6 +17,11 @@ public class ArmorCustomModelData
 
     public ArmorCustomModelData(IEventBus modEventBus, ModContainer modContainer)
     {
+        DataComponentRegister.DATA_COMPONENT_TYPES.register(modEventBus);
+
+        NeoForge.EVENT_BUS.addListener(ItemEvent::ItemStackedOnOtherEvent);
+        NeoForge.EVENT_BUS.addListener(ItemEvent::ItemTooltipEvent);
+
         NeoForge.EVENT_BUS.register(this);
     }
 
