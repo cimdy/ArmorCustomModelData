@@ -3,7 +3,7 @@
   "minVersion": "0.8",
   "package": "com.cimdy.acmd.mixin",
   "compatibilityLevel": "JAVA_21",
-  "refmap": "master_and_monster.refmap.json",
+  "refmap": "armor_custommodeldata.refmap.json",
   "mixins": [
 
   ],
