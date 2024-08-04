@@ -18,6 +18,6 @@ public record ArmorShaping(Holder<Item> itemStack){
     );
 
     public static final StreamCodec<RegistryFriendlyByteBuf, ArmorShaping> STREAM_CODEC =
-            StreamCodec.composite(ByteBufCodecs.holderRegistry(Registries.ITEM) ,ArmorShaping::itemStack, ArmorShaping::new);
+            StreamCodec.composite(ByteBufCodecs.holderRegistry(Registries.ITEM), ArmorShaping::itemStack, ArmorShaping::new);
 
 }
