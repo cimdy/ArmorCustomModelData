@@ -5,7 +5,6 @@
   "compatibilityLevel": "JAVA_21",
   "refmap": "armor_custommodeldata.refmap.json",
   "mixins": [
-
   ],
   "client": [
     "client.HumanoidArmorLayerMixin"
